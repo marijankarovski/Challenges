@@ -1,0 +1,18 @@
+html {
+  scroll-behavior: smooth;
+}
+.text {
+  text-shadow: 5px 5px 25px black;
+  font-weight: bolder;
+}
+
+.height {
+  height: 30vh;
+}
+
+.nav-item:hover {
+  /* ● Make the navbar items highlighted on hover. */
+  opacity: 0.5;
+  border-bottom: 3px solid black;
+  margin-bottom: -3px;
+}

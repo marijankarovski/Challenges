@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Car racing game</title>
+	<meta name="keywords" content="html,css,lekcii">
+	<meta name="description" content="ova e strana za ucenje">
+	<meta name="author" content="Kristijan Bobevski">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+	<!-- Latest compiled and minified BOOTSTRAP CSS -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+		crossorigin="anonymous"></script>
+
+	<!-- Local CSS -->
+	<link rel="stylesheet" type="text/css" href="style.css">
+
+	<!-- Font-awesome 4.7 cdn -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body id="race">
+	<!-- write your code here -->
+	<div class="container-fluid">
+		<audio src="audio/tyres.ogg" id="tyresAudio"></audio>
+		<audio src="audio/countdown.wav" id="countdownAudio"></audio>
+		<audio src="audio/backButton.wav" id="backButtonAudio"></audio>
+		<div class="row" id="header">
+			<div class="col-12">
+				<h1>Car Racing game</h1>
+			</div>
+			<div class="col-12">
+				<button id="raceBtn" class="btn btn-outline-secondary text-white btn-lg">Race!</button>
+				<button id="startOverBtn" disabled class="btn btn-outline-secondary text-white btn-lg">Start
+					over</button>
+			</div>
+		</div>
+		<div class="row" id="flag">
+			<div id="raceTrack" src="img/raceTrack.jpg" class="col-12">
+				<div id="carOne">
+					<img src="img/car1.gif" id="car1Img">
+				</div>
+				<div id="carTwo">
+					<img src="img/car2.gif" id="car2Img">
+				</div>
+			</div>
+
+			<div id="countdown">
+				<p id="timer"></p>
+			</div>
+			<div id="finish">
+				<img src="img/finish.gif">
+			</div>
+		</div>
+		<div class="row mt-5">
+			<div class="col-6">
+				<h1>Results</h1>
+				<div class="row">
+					<div class="col">
+						<table class="table">
+							<thead>
+								<tr>
+									<th>
+										<h3 class="white">Car1</h3>
+									</th>
+								</tr>
+							</thead>
+							<tr id="car1Result"></tr>
+						</table>
+					</div>
+					<div class="col">
+						<table class="table">
+							<thead>
+								<tr>
+									<th>
+										<h3 class="red">Car2</h3>
+									</th>
+								</tr>
+							</thead>
+							<tr id="car2Result"></tr>
+						</table>
+					</div>
+				</div>
+			</div>
+			<div class="col-6" id="previous">
+				<h2 class="mb-3">Results from the previous time you played this game:</h2>
+				<div id="previous-results"></div>
+			</div>
+		</div>
+	</div>
+	<!-- jQuery library -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+
+	<script src="app.js"></script>
+
+	<!-- Latest compiled JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</body>
+
+</html>

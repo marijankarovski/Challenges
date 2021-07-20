@@ -1,0 +1,295 @@
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  background-color: #fcd232;
+}
+@keyframes testanimacija {
+  0% {
+    left: 100%;
+    width: 0%;
+  }
+  100% {
+    left: 0%;
+    width: 100%;
+  }
+}
+@keyframes testanimacija2 {
+  0% {
+    left: 0%;
+    width: 0100%;
+  }
+  100% {
+    left: 100%;
+    width: 0%;
+  }
+}
+@keyframes testanimacijaTablet1 {
+  0% {
+    left: 70%;
+    width: 0%;
+  }
+  100% {
+    left: 0%;
+    width: 70%;
+  }
+}
+@keyframes testanimacijaTablet2 {
+  0% {
+    left: 0%;
+    width: 70%;
+  }
+  100% {
+    left: 70%;
+    width: 0%;
+  }
+}
+.jumbotroncard {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("Images/CS_Academy_2-2.jpg");
+  background-size: auto;
+  background-position: bottom;
+  margin: 0;
+  height: 40vh;
+}
+.jumbotronform {
+  background-color: #fcd232;
+  margin: 0;
+  height: 40vh;
+}
+.jumbotron-text {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.nav-bar {
+  display: flex;
+  justify-items: center;
+  margin: 15px;
+}
+#logo-text {
+  font-weight: bold;
+}
+.begin,
+.show,
+.hide {
+  display: flex;
+}
+#lizgacDIV {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#lizgacDIV > a > h6 {
+  color: black;
+  margin: 0 35px;
+}
+.begin-logo {
+  display: flex;
+  width: 20%;
+}
+.begin-logo > div > img {
+  width: 55px;
+}
+#click2 {
+  display: none;
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  color: black;
+}
+#click {
+  display: none;
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  color: white;
+}
+.fa-times {
+  color: white;
+  padding: 8px 12px;
+}
+.fa-bars {
+  color: black;
+  padding: 8px 12px;
+  float: right;
+}
+#footer {
+  margin-top: 150px;
+  position: relative;
+  bottom: 0;
+}
+@media only screen and (max-width: 767px) {
+  .show {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    animation: testanimacija 0.3s normal;
+    color: white;
+    background-color: #343a40;
+    overflow: hidden;
+    padding-top: 150px;
+    z-index: 1;
+  }
+  .show > a > .navbtn {
+    margin-left: 35px;
+  }
+  .hide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100vh;
+    animation: testanimacija2 0.3s normal;
+    color: white;
+    background-color: #343a40;
+    overflow: hidden;
+    padding-top: 150px;
+    display: block;
+    z-index: 1;
+  }
+  .begin {
+    position: absolute;
+    width: 0;
+    overflow: hidden;
+    padding-top: 150px;
+  }
+  #click2 {
+    display: block;
+  }
+  #click {
+    display: block;
+  }
+  .begin-logo {
+    display: flex;
+  }
+  .begin-logo > div > img {
+    width: 50px;
+  }
+  #logo-text {
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+  }
+  #lizgacDIV > a > h6 {
+    color: white;
+    padding: 20px 0px;
+    font-size: 1.5em;
+  }
+  #lizgacDIV > a > h6:hover {
+    color: black;
+  }
+  #lizgacDIV {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  .jumbotroncard {
+    height: 20vh;
+  }
+  .jumbotronform {
+    height: 20vh;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .show {
+    position: fixed;
+    width: 70%;
+    margin-left: 30%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    animation: testanimacijaTablet1 0.3s normal;
+    color: white;
+    background-color: #343a40;
+    overflow: hidden;
+    padding-top: 150px;
+    z-index: 1;
+  }
+  .show > a > .navbtn {
+    margin-left: 35px;
+  }
+  .hide {
+    position: absolute;
+    margin-left: 30%;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100vh;
+    animation: testanimacijaTablet2 0.3s normal;
+    color: white;
+    background-color: #343a40;
+    overflow: hidden;
+    padding-top: 150px;
+    display: block;
+    z-index: 1;
+  }
+  .begin {
+    position: absolute;
+    width: 0;
+    overflow: hidden;
+    padding-top: 150px;
+  }
+  #click2 {
+    display: block;
+  }
+  #click {
+    display: block;
+  }
+  .begin-logo {
+    display: flex;
+  }
+  .begin-logo > div > img {
+    width: 50px;
+  }
+  #logo-text {
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+  }
+  #lizgacDIV > a > h6 {
+    color: white;
+    padding: 20px 0px;
+    font-size: 1.5em;
+  }
+  #lizgacDIV > a > h6:hover {
+    color: black;
+  }
+  #lizgacDIV {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  .jumbotroncard {
+    height: 30vh;
+  }
+}
+.btn-color-red {
+  background-color: #ff1300;
+  color: white;
+}
+.card:hover {
+  transform: scale(1.1);
+}
+.card {
+  transition: transform 0.3s ease;
+  box-shadow: 0 4px 6px 0 rgba(22, 22, 26, 0.18);
+  border-radius: 4px;
+  border: 0;
+}
+.selector {
+  color: #343a40;
+}
+.activeBtn {
+  background: #eb3b3b !important;
+  color: #343a40 !important;
+}
+#programming,
+#marketing,
+#design {
+  background: #343a40;
+  color: white;
+}

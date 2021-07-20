@@ -1,0 +1,20 @@
+body {
+  background: url(../Images/workspace.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.empty {
+  height: 45vh;
+}
+.text {
+  text-align: center;
+  color: white;
+  text-shadow: 5px 5px 15px black;
+}
+.formInner {
+  background-color: white;
+}
+.error {
+  color: red;
+  text-shadow: 5px 5px 35px black;
+}

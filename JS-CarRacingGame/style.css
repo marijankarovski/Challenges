@@ -1,0 +1,103 @@
+/* ::-webkit-scrollbar go koristam za da go skrijam skrolbarot, za da ne mi pravi problem so sirinata na ekranot*/
+::-webkit-scrollbar {
+  width: 0px;
+}
+#race {
+  text-align: center;
+  background-color: #242021;
+}
+
+h1,
+h2,
+h3,
+h5 {
+  color: #a2a2a2;
+}
+
+h3 {
+  font-size: 25px;
+}
+
+h2 {
+  font-size: 35px;
+}
+
+h1 {
+  font-size: 50px;
+}
+#header {
+  height: 170px;
+}
+
+/* The racetrack */
+#raceTrack {
+  height: 460px;
+  background-image: url(img/raceTrack.jpg);
+  background-size: auto 100%;
+}
+
+#carOne {
+  color: #ffebf7;
+  width: 100%;
+  height: 230px;
+  position: relative;
+}
+#carTwo {
+  color: #ba0000;
+  position: relative;
+  width: 100%;
+  height: 230px;
+}
+#car1Img {
+  height: 230px;
+  position: absolute;
+  left: 0;
+}
+#car2Img {
+  height: 230px;
+  position: absolute;
+  left: 0;
+}
+
+/* Timer and flag */
+
+#finish {
+  display: none;
+  position: absolute;
+  top: 280px;
+  width: 100%;
+  margin: auto;
+  left: 0;
+}
+#countdown {
+  z-index: 9999;
+  position: absolute;
+  top: 240px;
+  width: 100%;
+  margin: auto;
+  left: 0;
+}
+#timer {
+  font-size: 200px;
+  font-weight: bold;
+  color: white;
+}
+
+/* Other */
+.red {
+  color: red;
+  font-size: 1.3em;
+}
+.white {
+  color: white;
+  font-size: 1.3em;
+}
+#previous {
+  display: none;
+}
+.btn {
+  width: 200px;
+}
+span {
+  font-weight: bold;
+}

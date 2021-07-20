@@ -1,0 +1,44 @@
+body {
+  background-color: #e7e7e7;
+}
+.badge {
+  color: #5c5c5c;
+  background-color: #d3d3d3;
+}
+.link {
+  text-decoration: none;
+  color: black;
+}
+#navbarImg {
+  height: 75px;
+  width: auto;
+}
+.orangeCard {
+  background-color: orange;
+}
+.card-img {
+  height: 250px;
+}
+.card-img:hover {
+  transform: scale(1.2);
+  cursor: pointer;
+}
+.container {
+  background-color: white !important;
+}
+.filterBadge:hover,
+.link:hover,
+.filterGender:hover,
+#showAll:hover {
+  color: orange;
+  cursor: pointer;
+}
+.bold {
+  font-weight: bold;
+}
+.orange {
+  color: orange;
+}
+.orangeBG {
+  background-color: orange;
+}

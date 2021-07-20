@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="row text-center bg-light p-3" id="restart">
+        <div class="col-12">
+          <h1 id="goodLuck">Good Luck</h1>
+        </div>
+        <div class="col-12">
+          <h5>Click the button to start over.</h5>
+        </div>
+        <div class="col-12">
+          <button
+            id="startOver"
+            class="btn btn-danger"
+            onClick="window.location.reload();"
+          >
+            Start Over
+          </button>
+        </div>
+      </div>
+      <div class="row text-center" id="loadScreen">
+        <div class="col-12 spaceWelcome"></div>
+        <div class="col">
+          <h1 class="animate__animated animate__bounce">Loading...</h1>
+        </div>
+      </div>
+      <div class="row text-center" id="startQuiz">
+        <div
+          class="col-12 d-flex align-items-center justify-content-center spaceWelcome"
+        >
+          <h1>Welcome to the Quiz</h1>
+        </div>
+        <div class="col">
+          <button id="startBtn" class="btn btn-secondary">Start</button>
+        </div>
+      </div>
+
+      <div
+        class="col-12 space d-flex flex-column align-items-center justify-content-center space"
+        id="question"
+      >
+        <h1 id="questionTitle"></h1>
+      </div>
+      <div class="row" id="questionMultiple">
+        <div class="col d-flex justify-content-around">
+          <button
+            id="mult0"
+            class="btn btn-light border border-secondary"
+          ></button>
+          <button
+            id="mult1"
+            class="btn btn-light border border-secondary"
+          ></button>
+          <button
+            id="mult2"
+            class="btn btn-light border border-secondary"
+          ></button>
+          <button
+            id="mult3"
+            class="btn btn-light border border-secondary"
+          ></button>
+        </div>
+      </div>
+      <div class="row" id="questionBool">
+        <div class="col d-flex justify-content-around">
+          <button
+            id="true"
+            class="btn btn-light border border-secondary"
+            value="True"
+          >
+            True
+          </button>
+          <button
+            id="false"
+            class="btn btn-light border border-secondary"
+            value="False"
+          >
+            False
+          </button>
+        </div>
+      </div>
+      <div class="row m-3">
+        <p id="questionCategory"></p>
+      </div>
+      <div class="row" id="scoreDiv"></div>
+      <div class="row" id="questionsCount">
+        <div class="col-6 offset-3 text-center mt-5 py-3 bg-light">
+          <h1 id="questionCount"></h1>
+        </div>
+      </div>
+    </div>
+    <script src="main.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://kit.fontawesome.com/280db70b77.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

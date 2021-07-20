@@ -1,0 +1,58 @@
+#carousel-caption {
+  top: 50%;
+  transform: translateY(-50%);
+}
+.bgCity {
+  background-image: url("images/lights.jpg");
+  background-attachment: fixed;
+}
+.bgMedia {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url("images/media.jpg");
+  background-attachment: fixed;
+}
+.bgBlack {
+  background-color: black;
+}
+.bgAboutUs {
+  background-image: url("images/image1.jpg");
+  background-attachment: fixed;
+}
+/* about us carousel*/
+#carousel-control-next,
+#carousel-control-prev {
+  align-items: flex-start;
+  width: 3%;
+}
+.size {
+  height: 550px;
+}
+.bgRed {
+  background-color: red;
+}
+.bgBlue {
+  background-color: #334fff;
+}
+.positionCenter {
+  margin-top: 250px;
+}
+.circle {
+  border-radius: 50%;
+}
+.overlap {
+  margin-top: -50px;
+}
+#carousel-item-about {
+  height: 100px;
+}
+.borderTop {
+  border-top: 1px solid #212121;
+}
+.qstnBG {
+  background-color: #212121;
+}
+@media (min-width: 992px) {
+  #carousel-item {
+    height: 550px;
+  }
+}
